@@ -1,0 +1,229 @@
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+.Banner1 {
+  margin: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Banner1 img {
+  margin: 0px;
+  display: inline-block;
+  width: 100%;
+  max-width: 2000px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.MOBan1img {
+  display: none;
+}
+.MOBan2img {
+  display: none;
+}
+
+.MainText1,
+.MainText2 {
+  margin-bottom: 7px;
+  height: 150px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 10rem;
+  text-align: center;
+  line-height: 180px;
+}
+.MainText2 {
+  font-size: 8rem;
+}
+.SubText1,
+.SubText2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Distribute space evenly around the items */
+  margin: 50px;
+}
+
+.Btn1,
+.Btn2 {
+  display: flex;
+  box-shadow: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.Button1,
+.Button2 {
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+.Slider1-Heading,
+.Slider2-Heading {
+  font-weight: 600;
+  margin: 50px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  /* margin-left: 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Slider2-Heading {
+  margin-bottom: 0px;
+}
+
+.Banner2-Heading {
+  font-weight: 600;
+  margin: 50px;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  /* margin-left: 0px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Banner2 {
+  margin: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Ban2img {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 2000px; /* Set a maximum width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.Offer {
+  background-color: black;
+  height: 100px;
+  width: auto;
+  color: white;
+  border-color: white;
+  margin-bottom: 30px;
+  margin-right: 18px;
+  margin-left: 18px;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .MOBanner1 {
+    margin-bottom: 0px;
+  }
+
+  .Banner1 img {
+    display: none;
+  }
+  .Banner2 img {
+    display: none;
+  }
+  .MainText1,
+  .MainText2 {
+    margin: 0px;
+    font-size: 3rem;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+  }
+  .SubText1,
+  .SubText2 {
+    margin: 0px;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .Button1,
+  .Button2 {
+    text-align: center;
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    border-color: white;
+    box-shadow: none;
+  }
+  .Slider1-Heading,
+  Slider2-Heading {
+    font-weight: 600;
+    margin: 50px;
+    font-size: 2rem;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .Slider1-Heading {
+    margin-bottom: 20px;
+  }
+  .Offer {
+    background-color: black;
+    height: 70px;
+    width: auto;
+    color: white;
+    border-color: white;
+    margin-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .MOBan1img {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .MOBan2img {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .MOBanner1 {
+    margin: 20px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .MOBanner2 {
+    margin: 20px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
