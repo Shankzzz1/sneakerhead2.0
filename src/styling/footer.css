@@ -9,12 +9,12 @@
     margin-top: 50px;
 }
 
-.Cat1 ul,.Cat2 ul,.Cat3 ul
+.Cat1 ul,.Cat2 ul,.Cat3 ul,.Cat4 ul
 {
     margin: 50px 100px;
     /* display:inline-block; */
 }
-.Cat1 ul li,.Cat2 ul li,.Cat3 ul li
+.Cat1 ul li,.Cat2 ul li,.Cat3 ul li,.Cat4 ul li
 {
     display: flex;
     font-size: 1rem;
@@ -40,11 +40,21 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin: 10px;
-    background-color: white;
+    background-color: black;
     height:30px;
     width: 30px;
 }
 
+.SocialMedia
+{
+    margin-left: 200px;
+}
+
+.copyright
+{
+    margin-right: 200px;
+
+}
 @media screen and (max-width: 1024px) {
 .footheading
 {
@@ -67,29 +77,43 @@
 
 .Cat1 ul li,.Cat2 ul li,.Cat3 ul li
 {
-    font-size: 1rem;
+    margin: 10px;
+    font-size: 0.8rem;
     /* margin:10px; */
-    display: none;
+    /* display: none; */
     list-style-type: none;
 }
 
 .Cat1 ul,.Cat2 ul,.Cat3 ul
 {
+    margin: 0px;
     /* margin: 50px 100px; */
     display:inline-block;
 }
 
+.container-1
+{
+    display: flex;
+    gap: 100px;
+    margin: 30px;
+}
+.conatainer-2
+{
+    display: none;
+}
 .footheading
 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .copyright
 {
     color: white;
-    margin-bottom: 20px;
-    /* position: relative; */
-    /* bottom: 20px; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    /* position: relative; 
+    top: 20px; */
 }
 
 .social
@@ -98,12 +122,15 @@
     align-items: flex-start;
     align-self: baseline;
     margin: 10px;
-    background-color: white;
+    background-color: black;
     height:30px;
     width: 30px;
 }
-.footheading
+.SocialMedia
 {
-    /* display:inline; */
+    margin-left: 0px;
 }
+
+
+
 }
