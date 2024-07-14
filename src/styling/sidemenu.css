@@ -1,0 +1,80 @@
+
+.MainSideMenu {
+    position: fixed;
+    overflow: scroll;
+    z-index: 999;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    font-size: 1.2rem;
+    right: -250px; 
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    animation: slide 0.2s forwards;
+    margin: 0px;
+    padding: 20px;
+    padding-top: 30px;
+    top: 0px;
+    opacity:20;
+
+  }
+  
+  @-webkit-keyframes slide {
+    100% {
+      right: 0;
+    }
+  }
+  
+  @keyframes slide {
+    100% {
+      right: 0;
+    }
+  }
+
+  .BrandLogo
+  {
+    display: flex;
+    position: absolute;
+    bottom: 8%;
+    margin-left:20px ;
+  }
+.Sidemenu-logo
+{
+    height: 50px;
+    width:  50px;
+    
+}
+
+.BrandName
+
+{
+    font-size: 0.9rem;
+    margin: 15px;
+}
+  .SideMenu1,
+  .SideMenu2,
+  .SideMenu3, 
+  .SideMenu4, 
+  .SideMenu5, 
+  .SideMenu6 {
+    display: flex;
+    margin: 20px 10px;
+    color: black; /* To ensure the text is visible against the dark background */
+  }
+
+  .symbolforlink
+  {
+  position: relative;
+  left: 200px;
+  }
+  
+
+  .Sidemenu-close
+  {
+    position: relative;
+   left: 250px;
+    height: 30px;
+    width:  30px;
+  }

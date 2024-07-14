@@ -91,11 +91,11 @@
     margin: 0;
     box-shadow: none;
   }
-
   .hideinmob
   {
-   list-style-type: none;
-   display: none;
+    display: none;
+    /* Arrange items in a row */
+
   }
   .Navbar ul li {
     margin-right: 7px;
@@ -131,4 +131,5 @@
   position: absolute;
   right:80px ;
 }
+
 }
