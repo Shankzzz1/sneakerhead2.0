@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 .Navbar {
@@ -98,10 +99,13 @@
 
   }
   .Navbar ul li {
+    
     margin-right: 7px;
     margin-left: 7px;
     /* display: none; */
   }
+  /* Navbar.module.css */
+
   .menu {
     display: inline-block;
     position: absolute;

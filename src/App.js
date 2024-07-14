@@ -1,14 +1,20 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
+import Home from "../src/components/Home";
+import Men from "../src/components/Men";
 import Navbar from "./components/Navbar";
-import Carousel from 'react-multi-carousel';
-
 import 'react-multi-carousel/lib/styles.css';
 
 function App() {
   return (
-    <>
-      <Home/>
+<>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/men" element={<Men/>} />
+      </Routes>
+    </Router>
     </>
   );
 }

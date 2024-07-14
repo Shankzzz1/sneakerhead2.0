@@ -1,28 +1,32 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styling/Navbar.css";
 import Logo from "../Images/shoe.png";
 import Menu from "../Images/menu-bar.png";
 import cart from "../Images/cart.png";
 import liked from "../Images/heart.png";
 import search from "../Images/search.png";
-import SideMenu from "./Sidemenu.js"; // Import the new component
+import SideMenu from "./Sidemenu";
 
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-
   };
 
   return (
     <div className="Navbar">
       <ul>
         <li>
-          <img src={Logo} className="logo" alt="Logo" />
+          <Link to="/">
+            <img src={Logo} className="logo" alt="Logo" />
+          </Link>
         </li>
         <div className="hideinmob">
-          <li>Men</li>
+          <li>
+            <Link to="/men">Men</Link>
+          </li>
           <li>Women</li>
           <li>Kids</li>
           <li>Featured</li>
