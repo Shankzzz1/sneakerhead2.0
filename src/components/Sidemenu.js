@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styling/sidemenu.css";
 import Logo from "../Images/shoe.png";
 import close from "../Images/close.png";
+import { Link } from "react-router-dom";
 
 function Sidemenu() {
   const [isOpen, setIsOpen] = useState(true); // State to manage menu open/close
@@ -23,7 +24,8 @@ function Sidemenu() {
             />
           </div>
           <div className="MainSideMenu-content">
-            <div className="SideMenu1">Men</div>
+            <div className="SideMenu1">
+             <Link to="/men">Men</Link> </div>
             <div className="SideMenu2">Women</div>
             <div className="SideMenu3">Kids</div>
             <div className="SideMenu4">Featured</div>

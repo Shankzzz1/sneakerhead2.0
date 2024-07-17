@@ -3,6 +3,10 @@
   margin: 0;
   text-decoration: none;
 }
+a:visited
+{
+  color: black;
+}
 
 .Navbar {
   /* padding: 5px; */
