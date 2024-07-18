@@ -1,0 +1,22 @@
+*
+{
+    list-style-type: none;
+}
+
+.Popular-Section-1,.Popular-Section-2
+{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+}
+.Popular-Section-1 ul li,.Popular-Section-2 ul li
+{
+
+
+    font-size: 3rem;
+    margin:50px 200px;
+    display: inline-block;
+    
+}
+

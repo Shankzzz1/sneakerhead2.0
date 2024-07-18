@@ -8,8 +8,66 @@ import "../styling/Home.css";
 import Card from "./Card";
 import Card2 from "./Card2";
 import Footer from "./Footer";
-
+import memban2 from "../Images/memberBan2.jpeg";
+import memban3 from "../Images/memberBan3.jpeg";
+import memban4 from "../Images/memberBan4.jpeg";
+import memban5 from "../Images/memberBan6.jpeg";
+import shoe from "../Images/Airforce.jpeg";
+import shoe2 from "../Images/shoe2.jpeg";
+import shoe3 from "../Images/shoe3.jpeg";
+import shoe4 from "../Images/shoe4.jpeg";
 function Home() {
+  const sliderImageUrl = [
+    {
+      url: memban2,
+      text1: "Member Product",
+      Maintext: "Your Exclusive Access",
+      btntext: "Shop"
+    },
+    {
+      url: memban2,
+      text1: "Member Product",
+      Maintext: "Your Exclusive Access",
+      btntext: "Shop"
+    },
+    {
+      url: memban3,
+      text1: "Member Product",
+      Maintext: "Your Exclusive Access",
+      btntext: "Shop"
+    },
+    {
+      url: memban4,
+      text1: "Member Product",
+      Maintext: "Your Exclusive Access",
+      btntext: "Shop"
+    },
+    {
+      url: memban5,
+      text1: "Member Product",
+      Maintext: "Your Exclusive Access",
+      btntext: "Shop"
+    }
+  ];
+
+  const sliderImageUrl1 = [
+    {
+      url: shoe
+    },
+    {
+      url: shoe2
+    },
+    {
+      url: shoe3
+    },
+    {
+      url: shoe4
+    },
+    {
+      url: shoe
+    }
+  ];
+  
   return (
     <>
       <Navbar />
@@ -31,7 +89,7 @@ function Home() {
       <div className="Section2">
         <div className="Slider1-Heading">Shop Air</div>
         {/* Render your Card component here */}
-        <Card />
+        <Card data={sliderImageUrl1} />
       </div>
 
       <div className="Section4">
@@ -56,7 +114,7 @@ function Home() {
 
       <div className="Section5">
         <div className="Slider1-Heading">Member Benifits</div>
-        <Card2 />
+        <Card2 data={sliderImageUrl}/>
       </div>
 
       <div className="Offer">JOIN SNEAKERHEAD AND GET 15% OFF</div>

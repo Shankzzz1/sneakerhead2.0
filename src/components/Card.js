@@ -1,10 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import shoe from "../Images/Airforce.jpeg";
-import shoe2 from "../Images/shoe2.jpeg";
-import shoe3 from "../Images/shoe3.jpeg";
-import shoe4 from "../Images/shoe4.jpeg";
+
 import "../styling/cards.css";
 
 const responsive = {
@@ -25,25 +22,8 @@ const responsive = {
   }
 };
 
-const sliderImageUrl = [
-  {
-    url: shoe
-  },
-  {
-    url: shoe2
-  },
-  {
-    url: shoe3
-  },
-  {
-    url: shoe4
-  },
-  {
-    url: shoe
-  }
-];
 
-const Card = () => {
+const Card = ({data}) => {
   return (
     <div className="parent">
       <Carousel
@@ -56,7 +36,7 @@ const Card = () => {
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {sliderImageUrl.map((imageUrl, index) => (
+        {data.map((imageUrl, index) => (
           <div className="slider" key={index}>
             <img className="sliderimg" src={imageUrl.url} alt="shoe" />
           </div>

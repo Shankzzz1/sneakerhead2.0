@@ -1,10 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import memban2 from "../Images/memberBan2.jpeg";
-import memban3 from "../Images/memberBan3.jpeg";
-import memban4 from "../Images/memberBan4.jpeg";
-import memban5 from "../Images/memberBan6.jpeg";
+
 import "../styling/card2.css";
 
 const responsive = {
@@ -25,40 +22,9 @@ const responsive = {
   }
 };
 
-const sliderImageUrl = [
-  {
-    url: memban2,
-    text1: "Member Product",
-    Maintext: "Your Exclusive Access",
-    btntext: "Shop"
-  },
-  {
-    url: memban2,
-    text1: "Member Product",
-    Maintext: "Your Exclusive Access",
-    btntext: "Shop"
-  },
-  {
-    url: memban3,
-    text1: "Member Product",
-    Maintext: "Your Exclusive Access",
-    btntext: "Shop"
-  },
-  {
-    url: memban4,
-    text1: "Member Product",
-    Maintext: "Your Exclusive Access",
-    btntext: "Shop"
-  },
-  {
-    url: memban5,
-    text1: "Member Product",
-    Maintext: "Your Exclusive Access",
-    btntext: "Shop"
-  }
-];
 
-const Card2 = () => {
+
+const Card2 = ({data}) => {
   return (
     <div className="parent">
       <Carousel
@@ -71,7 +37,7 @@ const Card2 = () => {
         partialVisible={false}
         dotListClass="custom-dot-list-style"
       >
-        {sliderImageUrl.map((imageUrl, index) => (
+        {data.map((imageUrl, index) => (
           <div className="slider" key={index}>
             <img className="sliderimg" src={imageUrl.url} alt="member product" />
             <div className="textinfo-card2">

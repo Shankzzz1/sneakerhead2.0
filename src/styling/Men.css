@@ -1,42 +1,44 @@
-
-.Men
-{
-    display: flex;
-    flex-direction: column;
-}
-.MenMain
-{
-    position:sticky;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.Men-Maintext1
-{
-    margin-left: 30px;
-    position: absolute;
-    left: 20px; /* Adjust as needed */
-    font-size: 2rem; 
-}
-.MenMain ul li{
-    font-size: 1.2rem;
-    display: inline-block;
-    list-style-type: none;
-    margin: 20px;
+.Men {
+  display: flex;
+  flex-direction: column;
 }
 
-.Men-Banner1
-{
-    margin: 50px;
+.MenMain {
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Men-Maintext1 {
+  margin-left: 30px;
+  position: absolute;
+  left: 20px; /* Adjust as needed */
+  font-size: 2rem;
+}
+
+.MenMain ul li {
+  font-size: 1.2rem;
+  display: inline-block;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.Men-Banner1 {
+  margin: 50px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.Men-Banner1 img
-{
-    margin: 0px;
+
+.Men-Banner1 img {
+  margin: 0px;
   display: inline-block;
   width: 100%;
   max-width: 2000px; /* Set a maximum width */
@@ -44,12 +46,11 @@
 }
 
 .MOB-Men-Banner1-img {
-    display: none;
-  }
+  display: none;
+}
 
-.Men-Section1
-{
-    margin-bottom: 7px;
+.Men-Section1 {
+  margin-bottom: 7px;
   height: 150px;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
@@ -59,82 +60,99 @@
   line-height: 180px;
 }
 
-.Men-Btn1{
+.Men-Btn1 {
+  margin-top: 0px;
+  display: flex;
+  box-shadow: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.Men-Button1,
+.Button2 {
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+
+.Men-Section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Men-Section4 ul {
+  margin: 50px 50px;
+}
+
+.Men-Section4 ul li {
+  margin: 10px;
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.Men-Section4 ul h3 {
+  font-size: 2rem;
+}
+
+.Mobile-Men-Section4 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Men {
+    margin-top: 10%;
+  }
+
+  .MenMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .Men-Maintext1 {
+    margin-top: 5%;
+    margin-left: 0px;
+    font-size: 1.5rem;
+    text-align: center; /* Center align for better readability on small screens */
+  }
+
+  .Men-Navbar ul {
+    flex-direction: column; /* Stack the list items vertically */
+    align-items: center; /* Center align the list items */
+  }
+
+  .Men-Navbar ul li {
+    margin-top: 23%;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .MOB-Men-Banner1 {
+    margin: 20px;
     margin-top: 0px;
     display: flex;
-    box-shadow: none;
     align-items: center;
     justify-content: center;
   }
-  
-  .Men-Button1,
-  .Button2 {
-    text-align: center;
-    height: 40px;
-    width: 120px;
-    border-radius: 5px;
-    background: black;
-    color: white;
-    border-color: white;
-    box-shadow: none;
-  }
-@media (max-width: 768px) {
 
-    .Men{
-        margin-top: 10%;
-    }
-    .MenMain
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-}
-
-    
-    .Men-Maintext1 {
-        margin-top: 5%;
-        margin-left: 0px;
-      font-size: 1.5rem;
-      text-align: center; /* Center align for better readability on small screens */
-    }
-  
-    .Men-Navbar ul {
-      flex-direction: column; /* Stack the list items vertically */
-      align-items: center; /* Center align the list items */
-    }
-  
-    .Men-Navbar ul li {
-
-      margin-top:23%;
-      font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    /* .MOB-Men-Banner1 {
-        display: in;
-        margin-bottom: 0px;
-      } */
-
-      .MOB-Men-Banner1 {
-        margin: 20px;
-        margin-top: 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .MOB-Men-Banner1-img {
-        display: inline-block;
-        width: 100%;
-        max-width: 400px; /* Set a maximum width */
-        height: auto; /* Maintain aspect ratio */
-      }
-    
-      .Men-Banner1 img {
-        display: none;
+  .MOB-Men-Banner1-img {
+    display: inline-block;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width */
+    height: auto; /* Maintain aspect ratio */
   }
 
-  .Men-Section1
-  {
+  .Men-Banner1 img {
+    display: none;
+  }
+
+  .Men-Section1 {
     margin: 0px;
     font-weight: 600;
     font-size: 2rem;
@@ -142,4 +160,37 @@
     height: 70px;
     line-height: 70px;
   }
+
+  .Men-Section4 {
+    display: none;
+  }
+
+  .Mobile-Men-Section4 {
+    display: flex;
+    flex-direction: row; /* Apply row direction for mobile view */
+    flex-wrap: wrap; /* Allow wrapping for better layout */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Mobile-Men-Section4-Submenu1,
+  .Mobile-Men-Section4-Submenu2,
+  .Mobile-Men-Section4-Submenu3 {
+    width: 100%; /* Make sure each submenu takes full width */
+    margin: 20px;
+  }
+
+  .Mobile-Men-Section4-Submenu1 h3,
+  .Mobile-Men-Section4-Submenu2 h3,
+  .Mobile-Men-Section4-Submenu3 h3{
+    font-size: 1.3rem;
+  }
+
+  .Mobile-Men-Section4-Submenu1 ul li,
+  .Mobile-Men-Section4-Submenu2 ul li,
+  .Mobile-Men-Section4-Submenu3 ul li{
+    list-style-type: none;
+    margin: 10px;
+  }
+
 }
