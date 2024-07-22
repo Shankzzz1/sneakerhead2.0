@@ -9,13 +9,20 @@ import MenSport2 from "../Images/Men-Sport-2.jpeg";
 import MenSport3 from "../Images/Men-Sport-3.jpeg";
 import MenSport4 from "../Images/Men-Sport-4.jpeg";
 import MenSport5 from "../Images/Men-Sport-5.jpeg";
+import Menprod1 from "../Images/Men-prod-5.jpeg";
+import Menprod2 from "../Images/Men-prod-4.jpeg";
+import Menprod3 from "../Images/Men-prod-3.jpeg";
+import Menprod4 from "../Images/Men-prod-2.jpeg";
+import Menprod5 from "../Images/Men-prod-1.jpeg";
 import shoe from "../Images/Airforce.jpeg";
 import shoe2 from "../Images/shoe2.jpeg";
 import shoe3 from "../Images/shoe3.jpeg";
 import shoe4 from "../Images/shoe4.jpeg";
 import Card2 from "./Card2";
 import Footer from "./Footer";
-import Popular from "./Popular";
+import Product from "./Product";
+import { Link } from "react-router-dom";
+
 
 function Men() {
   const MenSportSlider = [
@@ -50,6 +57,39 @@ function Men() {
       btntext: "Shop",
     },
   ];
+  const ProductData = [
+    {
+      url: Menprod1,
+      Name: "Random",
+      Category: "Running",
+      Price: "5000",
+    },
+    {
+      url: Menprod2,
+      Name: "Random",
+      Category: "Yoga",
+      Price: "5000",
+    },
+    {
+      url: Menprod3,
+      Name: "Random",
+      Category: "Yoga",
+      Price: "5000",
+    },
+    {
+      url: Menprod4,
+      Name: "Random",
+      Category: "Yoga",
+      Price: "5000",
+    },
+    {
+      url: Menprod5,
+      Name: "Random",
+      Category: "Yoga",
+      Price: "5000",
+    },
+    
+  ];
 
   const sliderImageUrl1 = [
     {
@@ -83,7 +123,7 @@ function Men() {
           <div className="Men-Maintext1">Men</div>
           <div className="Men-Navbar">
             <ul className="Men-Nav-ul">
-              <li>Shoes</li>
+              <li><Link to="/filter">Shoes</Link></li>
               <li>Clothing</li>
               <li>Gear</li>
             </ul>
@@ -108,8 +148,8 @@ function Men() {
         </div>
 
         <div className="Men-Section5">
-        <div className="Slider1-Heading">Popular Right Now</div>
-        <Popular/>
+        <div className="Slider1-Heading">Running Essentials</div>
+          <Product data={ProductData} />
         </div>
 
         <div className="Men-Section3">
@@ -179,6 +219,8 @@ function Men() {
             )}
           </div>
         </div>
+        <div className="Offer">JOIN SNEAKERHEAD AND GET 15% OFF</div>
+
         
         <Footer />
       </div>

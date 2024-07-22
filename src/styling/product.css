@@ -1,0 +1,60 @@
+.slider-prod {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    overflow: hidden;
+    padding: 2rem 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+  
+  .sliderimg-prod {
+    z-index: 2;
+    width: 100%;
+    display: inline-block;
+    max-width: 2000px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .react-multi-carousel-list {
+    padding: 0rem 0 2rem 0;
+  }
+  
+  .textinfo-prod-card2 {
+    /* background: red; */
+    margin: 0px 20px;
+    position: relative;
+    color: black;
+    /* bottom: 0px; */
+    /* left: 23px; */
+    /* align-self: flex-start; */
+    
+    z-index: 100;
+  }
+  
+  .Subtext-prod-card2 {
+    margin: 10px;
+    font-size: 1.3rem;
+  }
+  
+  .Maintext-prod-card2 {
+    margin: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .Btn-prod-card2 {
+    margin: 5px;
+    border-radius: 8px;
+    /* border-color: white; */
+    position: absolute;
+    left: 10px;
+    height: 30px;
+    width: auto;
+    color: black;
+    /* background-color: white; */
+    font-size: 1rem;
+    /* font-weight: 600; */
+  }
+  

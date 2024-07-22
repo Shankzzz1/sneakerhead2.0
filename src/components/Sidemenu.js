@@ -26,7 +26,7 @@ function Sidemenu() {
           <div className="MainSideMenu-content">
             <div className="SideMenu1">
              <Link to="/men">Men</Link> </div>
-            <div className="SideMenu2">Women</div>
+            <div className="SideMenu2"><Link to="/">Women</Link></div>
             <div className="SideMenu3">Kids</div>
             <div className="SideMenu4">Featured</div>
             <div className="SideMenu5">Custom</div>

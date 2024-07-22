@@ -1,0 +1,42 @@
+* {
+    list-style-type: none;
+}
+
+.Filter-Panel-Main {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 30px;
+}
+
+.Filter-Sidemenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    position: fixed;
+    overflow-y: auto; /* Ensures vertical scrollbar */
+    z-index: 999;
+    font-size: 1.2rem;
+    width: 20%;
+    height: 90%; /* Set height to a value less than 100% to avoid being cutoff by the viewport */
+    padding: 20px;
+    padding-top: 30px;
+    top: 0px;
+    margin-left: 0px;
+}
+
+.FilterBy-Categories {
+    /* background-color: red; */
+}
+
+.FilterBy-Categories ul li {
+    margin: 10px;
+    /* background-color: red; */
+}
+
+.FilterBy-Brands {
+    margin-top: 50px;
+    background-color: green;
+}
+
