@@ -1,0 +1,29 @@
+.Card3-Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.Subtext-card3, .Maintext-card3, .Price-card3 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.Card3img {
+    z-index: 2;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
