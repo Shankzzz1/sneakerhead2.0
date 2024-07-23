@@ -1,16 +1,15 @@
 import React from "react";
-// import "../styling/card3.css"; 
 
 function Card3({ data }) {
   return (
-    <>
+    <div className="grid grid-cols-3 gap-5 p-5">
       {data.map((product, index) => (
-        <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 m-5" key={index}>
-          <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-96">
+        <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl" key={index}>
+          <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-50">
             <img
-              src={product.image} // Use product.image if you have an image URL in your data, otherwise use your static image
+              src={product.image}
               alt={product.Name}
-              className="object-cover w-full h-full"
+              className="object-contain w-full h-full"
             />
           </div>
           <div className="p-6">
@@ -23,7 +22,7 @@ function Card3({ data }) {
               </p>
             </div>
             <p className="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
-              Product description goes here. You can add a description property to your data if you have specific details.
+              {product.Description || "Product description goes here. You can add a description property to your data if you have specific details."}
             </p>
           </div>
           <div className="p-6 pt-0">
@@ -36,7 +35,7 @@ function Card3({ data }) {
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }
 

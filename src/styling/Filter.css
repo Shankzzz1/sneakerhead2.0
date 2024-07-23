@@ -1,41 +1,72 @@
-*
-{
+* {
   margin: 0;
   padding: 0;
+  overflow-x: none; /* Prevent vertical overflow */
+
+}
+body{
+  overflow-x: hidden; /* Prevent vertical overflow */
+
+  /* overflow: hidden; */
 }
 
-.Mens-prod-Count
-{
+.Mens-prod-Count {
   margin: 20px 30px;
   font-size: 2rem;
-}
-.Filter-Panel-Main
-{
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
+  position: sticky;
+  top: 25px;
+  width: 100%;
+  /* background-color: red; */
+  z-index: 200;
 }
 
-.Filter-Panel2
-{
-  display: flex;
-  flex-direction: row;
-  margin: 10px 30px;
+.Filter-Panel-Main {
+  /* background-color: blue; */
+  margin:0;
+   display: flex; 
+   flex-direction: row;
+   width: 100vw;
+   /* justify-content: center; */
+   /* align-items: center; */
+    height: auto; /* Full viewport height */
+  /* overflow-y: scroll;  */
+  position: sticky;
+  top: 100px;
 }
-.Filter-Sidemenu
-{
-  display: flex;
+
+
+.Filter-Sidemenu {
+  overflow-y: scroll; /* Enable vertical scrolling */
+  position: sticky;
+  top:10%;
+  width: 25%;
+  height: 90vh; 
+  background-color: white; /* Background color for visibility */
+  border-right: 1px solid #ddd; /* Border for separation */
+  padding: 0px; /* Optional padding */
+  box-sizing: border-box; /* Ensure padding is included in width/height */
+  margin-top: 0;
+  
+}
+
+.Filter-Sidemenu ul {
+  list-style-type: none; /* Remove list bullets */
+  /* padding: 0; */
+}
+
+.Filter-Sidemenu ul li {
+  margin: 20px 40px; /* Vertical margin for items */
+}
+
+.Filter-product {
+
+  height: 90vh;
   overflow-y: scroll;
-  width: 30%;
-  /* height: 100%; */
-}
-
-.Filter-product
-{
-  display:  flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
+  position: sticky;
+  top: 20%;
+  /* background-color: yellow; */
+  
+  
 }
 
 .dropdown-Main {
@@ -50,5 +81,4 @@
 .dropdown-options.show {
   display: flex;
   flex-direction: column;
-
 }
