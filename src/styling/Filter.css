@@ -2,9 +2,8 @@
   margin: 0;
   padding: 0;
   overflow-x: none; /* Prevent vertical overflow */
-
 }
-body{
+body {
   overflow-x: hidden; /* Prevent vertical overflow */
 
   /* overflow: hidden; */
@@ -20,33 +19,36 @@ body{
   z-index: 200;
 }
 
+.filter-btn
+{
+  display: none;
+}
+
 .Filter-Panel-Main {
   /* background-color: blue; */
-  margin:0;
-   display: flex; 
-   flex-direction: row;
-   width: 100vw;
-   /* justify-content: center; */
-   /* align-items: center; */
-    height: auto; /* Full viewport height */
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: auto; /* Full viewport height */
   /* overflow-y: scroll;  */
   position: sticky;
   top: 100px;
 }
 
-
 .Filter-Sidemenu {
   overflow-y: scroll; /* Enable vertical scrolling */
   position: sticky;
-  top:10%;
+  top: 10%;
   width: 25%;
-  height: 90vh; 
+  height: 90vh;
   background-color: white; /* Background color for visibility */
   border-right: 1px solid #ddd; /* Border for separation */
   padding: 0px; /* Optional padding */
   box-sizing: border-box; /* Ensure padding is included in width/height */
   margin-top: 0;
-  
 }
 
 .Filter-Sidemenu ul {
@@ -59,14 +61,11 @@ body{
 }
 
 .Filter-product {
-
   height: 90vh;
   overflow-y: scroll;
   position: sticky;
   top: 20%;
   /* background-color: yellow; */
-  
-  
 }
 
 .dropdown-Main {
@@ -81,4 +80,56 @@ body{
 .dropdown-options.show {
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden; /* Prevent vertical overflow */
+  
+    /* overflow: hidden; */
+  }
+  .Mens-prod-Count {
+    margin: 0px;
+    margin-top: 15%;
+    font-size: 1.5rem;
+    position: sticky;
+    width: auto;
+    top: 5%;
+    margin-left: 30px;
+    /* background-color: blue; */
+  }
+
+  .Filter-Panel-Main {
+    /* background-color: red; */
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    position: sticky;
+    top: 200px;
+  }
+  .Filter-Sidemenu {
+    display: none;
+  }
+
+  .filter-btn
+  {
+    display: inline-block;
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    top: 5px;
+    right: 20px;
+    width: 50px;
+  }
+  .Filter-product {
+    height: 90vh;
+    /* overflow-y: scroll; */
+    position: sticky;
+    top: 20%;
+    /* background-color: yellow; */
+  }
 }

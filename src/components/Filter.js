@@ -66,7 +66,9 @@ function Filter(props) {
   return (
     <>
       <Navbar />
-          <div className="Mens-prod-Count">Men's Shoes(568)</div>
+          <div className="Mens-prod-Count">Men's Shoes(568)
+            <button className="filter-btn">Filter</button>
+          </div>
       <div className="Filter-Panel-Main">
         <div className="Filter-Sidemenu">
           <ul>

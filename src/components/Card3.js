@@ -2,7 +2,7 @@ import React from "react";
 
 function Card3({ data }) {
   return (
-    <div className="grid grid-cols-3 gap-5 p-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 p-0">
       {data.map((product, index) => (
         <div className="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl" key={index}>
           <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white bg-clip-border rounded-xl h-50">
