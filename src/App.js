@@ -6,6 +6,7 @@ import Men from "../src/components/Men";
 // import Navbar from "./components/Navbar";
 import 'react-multi-carousel/lib/styles.css';
 import Filter from "./components/Filter";
+import Productdetails from "./components/Productdetails";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/men" element={<Men/>} />
         <Route exact path="/filter" element={<Filter/>} />
+        <Route exact path="/product" element={<Productdetails/>} />
       </Routes>
     </Router>
     </>
