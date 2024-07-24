@@ -47,6 +47,7 @@
 
 .SocialMedia
 {
+    display: flex;
     margin-left: 200px;
 }
 
