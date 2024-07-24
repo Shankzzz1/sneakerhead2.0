@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import "../styling/Filter.css";
 import Card3 from "./Card3";
 import shoe from "../Images/Airforce.jpeg";
+import FilterMob from "./FilterMob";
 
 function Filter(props) {
   const MenSportProducts = [
@@ -63,12 +64,21 @@ function Filter(props) {
     setOpenDropdown(openDropdown === dropdown ? null : dropdown);
   };
 
+  const [opentfmenu, settfmenu] = useState(false);
+
+  const togglefiltermenu = () => {
+    settfmenu(!opentfmenu);
+  };
+
   return (
     <>
       <Navbar />
-          <div className="Mens-prod-Count">Men's Shoes(568)
-            <button className="filter-btn">Filter</button>
-          </div>
+      <div className="Mens-prod-Count">
+        Men's Shoes(568)
+        <button className="filter-btn" onClick={togglefiltermenu}>
+          Filter
+        </button>
+      </div>
       <div className="Filter-Panel-Main">
         <div className="Filter-Sidemenu">
           <ul>
@@ -213,9 +223,9 @@ function Filter(props) {
           </ul>
         </div>
         <div className="Filter-product">
-        <Card3 data={MenSportProducts} />
-
+          <Card3 data={MenSportProducts} />
         </div>
+        {opentfmenu && <FilterMob />}
       </div>
     </>
   );

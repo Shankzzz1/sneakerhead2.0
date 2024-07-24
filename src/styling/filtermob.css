@@ -1,0 +1,45 @@
+.FilterMOb-Main
+{
+    position: fixed;
+    overflow: scroll;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    right: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    animation: slide1 0.2s forwards;
+    margin: 0px;
+    padding: 20px;
+    padding-top: 30px;
+    top: 100%; /* Start from the bottom */
+    opacity: 1;
+}
+
+.Sidemenu-close-filter
+{
+    position: absolute;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+    right: 20px;
+}
+@-webkit-keyframes slide1 {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0;
+    }
+}
+  
+@keyframes slide1 {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: 0;
+    }
+}
