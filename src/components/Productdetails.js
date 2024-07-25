@@ -187,7 +187,9 @@ function Productdetails() {
             </div>
           </section>
         </div>
-      <div className="Product-review"></div>
+      <div className="Product-review">
+        
+      </div>
       </div>
 
       <Footer />
