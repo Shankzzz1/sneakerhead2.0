@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "buffer": "^6.0.3",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "simplecrypt": "^0.1.0",
+    "util": "^0.12.5"
+  }
+}
