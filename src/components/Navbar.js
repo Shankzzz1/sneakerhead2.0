@@ -6,6 +6,7 @@ import Menu from "../Images/menu-bar.png";
 import cart from "../Images/cart.png";
 import liked from "../Images/heart.png";
 import search from "../Images/search.png";
+import acc from "../Images/acc.png";
 import SideMenu from "./Sidemenu";
 
 function Navbar() {
@@ -44,6 +45,9 @@ function Navbar() {
         </li>
         <li>
           <img src={search} className="search" alt="Search" />
+        </li>
+        <li>
+          <img src={acc} className="acc" alt="acc" />
         </li>
       </ul>
       {isSidebarOpen && <SideMenu />}

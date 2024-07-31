@@ -47,7 +47,7 @@ a:visited
   line-height: 54px;
 }
 
-.cart ,.liked,.search
+.cart ,.liked,.search,.acc
 {
   display: inline-block;
   position:absolute;
@@ -57,17 +57,22 @@ a:visited
 }
 
 .cart{
-  right: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.liked{
   right:55px;
   margin-left: 20px;
   margin-right: 20px;
 }
-.search{
+.liked{
   right: 105px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.search{
+  right: 155px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.acc{
+  right: 5px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -129,15 +134,21 @@ a:visited
 {
   display: none;
 }
+.acc
+{
+  position: absolute;
+  margin-top: 2px;
+  right:35px ;
+}
 .liked
 {
   position: absolute;
-  right:40px ;
+  right:70px ;
 }
 .search
 {
   position: absolute;
-  right:80px ;
+  right:100px ;
 }
 
 }
