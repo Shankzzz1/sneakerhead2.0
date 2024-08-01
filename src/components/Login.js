@@ -12,7 +12,10 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/login", { email, password });
+      const response = await axios.post("http://localhost:5000/api/login", {
+        email,
+        password,
+      });
       const token = response.data.token;
       localStorage.setItem("token", token); // Store the JWT token in local storage
       navigate("/"); // Navigate to the home page
@@ -22,7 +25,11 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 px-6">
+    <>
+    <div
+      div
+      className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8 px-6"
+    >
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <img className="mx-auto h-20 w-auto" src={Logo} alt="Workflow" />
         <h2 className="mt-0 text-center text-3xl leading-9 font-extrabold text-gray-900">
@@ -106,7 +113,7 @@ function Login() {
 
               <div className="text-sm leading-5">
                 <a
-                  href="/"
+                  href="/reset"
                   className="font-medium text-black hover:text-black focus:outline-none focus:underline transition ease-in-out duration-150"
                 >
                   Forgot your password?
@@ -128,6 +135,7 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -9,6 +9,8 @@ import Filter from "./components/Filter";
 import Productdetails from "./components/Productdetails";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Passreset from "./components/Passreset";
+import Newpass from "./components/Newpass";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route exact path="/product" element={<Productdetails/>} />
         <Route exact path="/login" element={<Login/>} />
         <Route exact path="/signup" element={<Signup/>} />
+        <Route exact path="/reset" element={<Passreset/>} />
+        <Route exact path="/newpassword" element={<Newpass/>} />
       </Routes>
     </Router>
     </>

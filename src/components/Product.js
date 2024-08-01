@@ -26,6 +26,7 @@ const responsive = {
 
 const Product = ({data}) => {
   return (
+    <>
     <div className="parent">
       <Carousel
         responsive={responsive}
@@ -51,6 +52,7 @@ const Product = ({data}) => {
         ))}
       </Carousel>
     </div>
+    </>
   );
 };
 
