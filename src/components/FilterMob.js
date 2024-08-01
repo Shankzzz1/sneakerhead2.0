@@ -14,7 +14,7 @@ function FilterMob() {
     <>
     {isOpen && (
       <div className="FilterMOb-Main">
-        <img src={close} className="Sidemenu-close-filter" onClick={handleClose} />
+        <img src={close} className="Sidemenu-close-filter" onClick={handleClose} alt="image1" />
         <div className="cat1 mt-5" >
           <ul>
             <li>
