@@ -1,24 +1,31 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useLocation } from 'react-router-dom';
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 function Newpass() {
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const query = useQuery();
+  const email = query.get('email');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage('');
     setError('');
-    
+
     if (newPassword !== confirmPassword) {
       setError('Passwords do not match');
       return;
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/new-password", { newPassword });
+      const response = await axios.post("http://localhost:5000/api/newpassword", { newPassword, email });
       console.log('Response:', response.data);
       setMessage(response.data.message);
     } catch (error) {
@@ -33,9 +40,7 @@ function Newpass() {
         <div className="p-4 sm:p-7">
           <div className="text-center">
             <h1 className="block text-2xl font-bold text-gray-800 dark:text-black">Set New Password</h1>
-            
           </div>
-
           <div className="mt-5">
             <form onSubmit={handleSubmit}>
               <div className="grid gap-y-4">

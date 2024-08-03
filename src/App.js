@@ -11,6 +11,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Passreset from "./components/Passreset";
 import Newpass from "./components/Newpass";
+import Account from "./components/Account";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/signup" element={<Signup/>} />
         <Route exact path="/reset" element={<Passreset/>} />
         <Route exact path="/newpassword" element={<Newpass/>} />
+        <Route exact path="/account" element={<Account/>} />
       </Routes>
     </Router>
     </>

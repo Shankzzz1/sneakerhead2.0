@@ -14,7 +14,6 @@ function Navbar() {
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
-   
   };
 
   return (
@@ -47,7 +46,9 @@ function Navbar() {
           <img src={search} className="search" alt="Search" />
         </li>
         <li>
-          <img src={acc} className="acc" alt="acc" />
+          <Link to="/account">
+            <img src={acc} className="acc" alt="acc" />
+          </Link>
         </li>
       </ul>
       {isSidebarOpen && <SideMenu />}
