@@ -1,0 +1,42 @@
+.edit-btn
+{
+    position: relative;
+    left: 400px;
+}
+
+
+.logout
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+}
+.logout button
+{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 80px;
+   
+}
+
+.Userinfo h1{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.Userinfo p{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+
+    .Userinfo h1{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .Userinfo p{
+        font-size: 1rem;
+    }
+    
+}
