@@ -12,6 +12,7 @@ import Signup from "./components/Signup";
 import Passreset from "./components/Passreset";
 import Newpass from "./components/Newpass";
 import Account from "./components/Account";
+import Women from "./components/Women";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>} />
         <Route exact path="/men" element={<Men/>} />
+        <Route exact path="/women" element={<Women/>} />
         <Route exact path="/filter" element={<Filter/>} />
         <Route exact path="/product" element={<Productdetails/>} />
         <Route exact path="/login" element={<Login/>} />

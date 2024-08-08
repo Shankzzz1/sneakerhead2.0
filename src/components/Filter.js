@@ -13,6 +13,7 @@ function Filter(props) {
       Name: "Running Shoes",
       Category: "Running",
       Price: "$100",
+      URL: "String",
     },
     {
       index: 2,
@@ -20,6 +21,7 @@ function Filter(props) {
       Name: "Yoga Mat",
       Category: "Yoga",
       Price: "$50",
+      URL: "String",
     },
     {
       index: 3,
@@ -27,6 +29,7 @@ function Filter(props) {
       Name: "Yoga Mat",
       Category: "Yoga",
       Price: "$50",
+      URL: "String",
     },
     {
       index: 4,
@@ -34,6 +37,7 @@ function Filter(props) {
       Name: "Yoga Mat",
       Category: "Yoga",
       Price: "$50",
+      URL: "String",
     },
     {
       index: 5,
@@ -41,6 +45,7 @@ function Filter(props) {
       Name: "Training Shorts",
       Category: "Training",
       Price: "$30",
+      URL: "String",
     },
     {
       index: 6,
@@ -48,6 +53,7 @@ function Filter(props) {
       Name: "Tennis Racket",
       Category: "Tennis",
       Price: "$120",
+      URL: "String",
     },
     {
       index: 7,
@@ -55,6 +61,7 @@ function Filter(props) {
       Name: "Basketball",
       Category: "Basketball",
       Price: "$25",
+      URL: "String",
     },
   ];
 
@@ -74,7 +81,7 @@ function Filter(props) {
     <>
       <Navbar />
       <div className="Mens-prod-Count">
-        Men's Shoes(568)
+        Men's Shoes({"Total Nuumber Will Be Shown Here"})
         <button className="filter-btn" onClick={togglefiltermenu}>
           Filter
         </button>

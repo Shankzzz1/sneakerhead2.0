@@ -1,11 +1,11 @@
 import React from 'react'
-import Navbar from "./Navbar";
+import Filter from './Filter';
 function Women() {
   return (
     <>
-    <Navbar/>
+    <Filter/>
     </>
   )
 }
 
-export default Women
+export default Women;
