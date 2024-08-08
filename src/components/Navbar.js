@@ -33,7 +33,11 @@ function Navbar() {
           Women
           </Link>
           </li>
-          <li>Kids</li>
+          <li>
+          <Link to="/kids">
+          Kids
+          </Link>
+          </li>
           <li>Featured</li>
           <li>Custom</li>
         </div>
