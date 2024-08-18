@@ -24,24 +24,25 @@ function Navbar() {
             <img src={Logo} className="logo" alt="Logo" />
           </Link>
         </li>
+      
         <div className="hideinmob">
           <li>
             <Link to="/men">Men</Link>
           </li>
           <li>
-          <Link to="/women">
-          Women
-          </Link>
+            <Link to="/women">Women</Link>
           </li>
           <li>
-          <Link to="/kids">
-          Kids
-          </Link>
+            <Link to="/kids">Kids</Link>
           </li>
-          <li>Featured</li>
-          <li>Custom</li>
+          <li>
+            <Link to="/featured">Featured</Link>
+          </li>
         </div>
+          </ul>
+          <ul>
         <li>
+            
           <img src={Menu} className="menu" onClick={toggleSidebar} alt="Menu" />
         </li>
         <li>

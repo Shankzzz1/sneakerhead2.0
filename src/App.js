@@ -14,6 +14,7 @@ import Newpass from "./components/Newpass";
 import Account from "./components/Account";
 import Women from "./components/Women";
 import Kids from "./components/Kids";
+import Featured from "./components/Featured";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/men" element={<Men/>} />
         <Route exact path="/women" element={<Women/>} />
         <Route exact path="/kids" element={<Kids/>} />
+        <Route exact path="/featured" element={<Featured/>} />
         <Route exact path="/filter" element={<Filter/>} />
         <Route exact path="/product" element={<Productdetails/>} />
         <Route exact path="/login" element={<Login/>} />
